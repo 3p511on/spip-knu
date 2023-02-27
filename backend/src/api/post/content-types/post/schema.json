@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "news",
+  "info": {
+    "singularName": "post",
+    "pluralName": "news",
+    "displayName": "News",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "maxLength": 120
+    },
+    "alias": {
+      "type": "string",
+      "unique": true,
+      "required": false
+    },
+    "content": {
+      "type": "richtext",
+      "required": true
+    },
+    "teaser": {
+      "type": "text"
+    }
+  }
+}
